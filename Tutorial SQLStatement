@@ -1,0 +1,14 @@
+Cara Menggunakan SQLStatement
+
+'pick' => null,
+// 'pick' => '"Name"',
+'sort' => null,
+// 'sort' => '"Sys_RPK" DESC',
+'filter' => null,
+// 'filter' => '"FullName" = ''Bank Mandiri'' OR "Sys_RPK" = 22',
+'paging' => null
+// 'paging' => "LIMIT 1 OFFSET 1"
+
+Note:
+- Sesuaikan dengan func yg digunakan.
+- Coba di pgAdmin terlebih dahulu.
