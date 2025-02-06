@@ -7,8 +7,8 @@
 @include('getFunction.getProduct')
 @include('Process.Advance.AdvanceSettlement.Functions.PopUp.SearchAdvance')
 @include('Process.Advance.AdvanceSettlement.Functions.PopUp.PopUpAdvanceSettlementRevision')
-<!-- @include('getFunction.getBank')
-@include('getFunction.getEntityBankAccount') -->
+@include('getFunction.getBank')
+@include('getFunction.getEntityBankAccount')
 
 <div class="content-wrapper">
   <section class="content">
