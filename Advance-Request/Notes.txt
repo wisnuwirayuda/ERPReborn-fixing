@@ -1,0 +1,2 @@
+- Version 1.0 => versi awal sebelum dimodifikasi, dibuat oleh developer sebelumnya.
+- Version 2.0 => sudah dimodifikasi, dibuat oleh saya.
