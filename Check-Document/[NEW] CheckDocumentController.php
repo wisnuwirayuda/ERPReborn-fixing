@@ -333,6 +333,8 @@ class CheckDocumentController extends Controller
             // CALL FUNCTION SHOW DATA BY ID
             $varDataWorkflow = $this->GetAllDocumentTypeByID($varAPIWebToken, $formDocumentNumber_RefID);
 
+            dump($varDataWorkflow);
+
             return view('Documents.Transactions.IndexCheckDetailDocument', $varDataWorkflow);
         } catch (\Throwable $th) {
             Log::error("Error at ShowDocumentByID: " . $th->getMessage());
