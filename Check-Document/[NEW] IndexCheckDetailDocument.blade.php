@@ -240,6 +240,25 @@
               </div>
             </div>
 
+            <!-- BUTTON APPROVAL -->
+            <div class="col-12 text-right" style="margin-bottom: 1rem;">
+                <?php if ($statusApprover == "YES") { ?>
+                    <a onclick="" class="btn btn-default btn-sm" style="background-color:#e9ecef;border:1px solid #ced4da;margin-right:10px;">
+                        <img src="{{ asset('AdminLTE-master/dist/img/save.png') }}" width="13" alt="" title="Approve"> Approve
+                    </a>
+
+                    <a onclick="" class="btn btn-default btn-sm" style="background-color:#e9ecef;border:1px solid #ced4da;">
+                        <img src="{{ asset('AdminLTE-master/dist/img/cancel.png') }}" width="13" alt="" title="Reject"> Reject
+                    </a>
+                <?php } ?>
+
+                <?php if ($statusApprover == "RESUBMIT") { ?>
+                    <button class="btn btn-default btn-sm" style="background-color:#e9ecef;border:1px solid #ced4da;">
+                        <img src="{{ asset('AdminLTE-master/dist/img/reset.png') }}" width="13" alt="" title="Resubmit" /> Resubmit
+                    </button>
+                <?php } ?>
+            </div>
+
             <!-- APPROVAL HISTORY -->
             <div class="col-12">
               <div class="card">
