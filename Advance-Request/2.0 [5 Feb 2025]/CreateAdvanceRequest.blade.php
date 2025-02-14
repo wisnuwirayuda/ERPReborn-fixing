@@ -271,6 +271,7 @@
                   </table>
                 </div>
 
+                <!-- FOOTER -->
                 <div class="card-body tableShowHideBudget">
                   <table style="float:right;">
                     <tr>
@@ -299,6 +300,98 @@
             </div>
           </div>
         </div>
+
+        <!-- ADVANCE LIST (CART) -->
+        <div class="tab-content px-3 pb-2" id="nav-tabContent">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <!-- HEADER -->
+                <div class="card-header">
+                  <label class="card-title">
+                    Advance List (Cart)
+                  </label>
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-angle-down btn-sm" style="color:black;"></i>
+                    </button>
+                  </div>
+                </div>
+                
+                <!-- TABLE -->
+                <div class="card-body table-responsive p-0" style="height:135px;">
+                  <table class="table table-head-fixed text-nowrap table-sm">
+                    <thead>
+                      <th style="padding-top: 10px;padding-bottom: 10px;border-right:1px solid #e9ecef;text-align: center;">Product Id</th>
+                      <th style="padding-top: 10px;padding-bottom: 10px;border-right:1px solid #e9ecef;text-align: center;">Product Name</th>
+                      <th style="padding-top: 10px;padding-bottom: 10px;border-right:1px solid #e9ecef;text-align: center;">UOM</th>
+                      <th style="padding-top: 10px;padding-bottom: 10px;border-right:1px solid #e9ecef;text-align: center;">Currency</th>
+                      <th style="padding-top: 10px;padding-bottom: 10px;border-right:1px solid #e9ecef;text-align: center;">Price</th>
+                      <th style="padding-top: 10px;padding-bottom: 10px;border-right:1px solid #e9ecef;text-align: center;">Qty</th>
+                      <th style="padding-top: 10px;padding-bottom: 10px;border-right:1px solid #e9ecef;text-align: center;">Total</th>
+                    </thead>
+
+                    <tbody></tbody>
+                  </table>
+                </div>
+
+                <!-- FOOTER -->
+                <div class="card-body">
+                  <table style="float:right;">
+                    <tr>
+                      <th> Total Item :
+                        <span id="GrandTotal"></span>
+                      </th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- REMARK -->
+        <div class="tab-content px-3 pb-2" id="nav-tabContent">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <!-- HEADER -->
+                <div class="card-header">
+                  <label class="card-title">
+                    Remark
+                  </label>
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-angle-down btn-sm" style="color:black;"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="card-body">
+                  <div class="row py-3">
+                    <textarea name="var_remark" id="remark" class="form-control"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUTTON -->
+        <div class="tab-content px-3 pb-2" id="nav-tabContent">
+          <div class="row">
+            <div class="col">
+              <a onclick="CancelAdvance()" class="btn btn-default btn-sm float-right" style="background-color:#e9ecef;border:1px solid #ced4da;">
+                <img src="{{ asset('AdminLTE-master/dist/img/cancel.png') }}" width="13" alt="" title="Cancel Advance List Cart"> Cancel
+              </a>
+
+              <button class="btn btn-default btn-sm float-right" type="submit" id="submitArf" style="margin-right: 5px;background-color:#e9ecef;border:1px solid #ced4da;">
+                <img src="{{ asset('AdminLTE-master/dist/img/save.png') }}" width="13" alt="" title="Submit to Advance"> Submit
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       @endif
     </div>
@@ -306,4 +399,5 @@
 </div>
 
 @include('Partials.footer')
+@include('Process.Advance.AdvanceRequest.Functions.Footer.FooterAdvanceRequest')
 @endsection
