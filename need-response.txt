@@ -49,3 +49,4 @@ API Key:
 
 Need Response:
 - quantityRemaining
+- productCode
