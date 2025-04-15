@@ -1,0 +1,34 @@
+============================== DELIVER ORDER ==============================
+API Key:
+- transaction.read.dataList.supplyChain.getDeliveryOrderDetail
+
+Need Response:
+- Date (created)
+- DateUpdate
+- CombinedBudgetCode
+- CombinedBudgetName
+- CombinedBudgetSectionCode
+- CombinedBudgetSectionName
+- TransporterName
+- TransporterContactPerson
+- TransporterPhone
+- TransporterHandphone
+- TransporterFax
+- TransporterAddress
+- FileID
+- BusinessDocument_RefID
+- BusinessDocumentType_RefID
+- BusinessDocumentType_Name
+- CombinedBudgetSectionDetail_RefID
+- CombinedBudget_RefID
+- Product_RefID
+- ProductName
+- QuantityUnit_RefID
+- QuantityUnitName
+- ProductUnitPriceCurrency_RefID
+- ProductUnitPriceCurrencyISOCode
+- ProductUnitPriceBaseCurrencyValue
+- ProductUnitPriceCurrencyExchangeRate
+- PriceCurrency_RefID
+- PriceBaseCurrencyValue
+- OrderSequence
