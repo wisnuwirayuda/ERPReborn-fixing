@@ -1,4 +1,4 @@
-============================== DELIVER ORDER ==============================
+============================== DELIVERY ORDER REVISION & GO TO DOCUMENT PAGE ==============================
 API Key:
 - transaction.read.dataList.supplyChain.getDeliveryOrderDetail
 
@@ -32,3 +32,20 @@ Need Response:
 - PriceCurrency_RefID
 - PriceBaseCurrencyValue
 - OrderSequence
+
+============================== DELIVERY ORDER PAGE ==============================
+API Key:
+- transaction.read.dataList.supplyChain.getPurchaseOrderDetail
+
+Need Response:
+- ProductCode
+- ProductName
+- UOM
+- QtyAvail
+
+============================== PURCHASE ORDER PAGE ==============================
+API Key:
+- transaction.read.dataList.supplyChain.getPurchaseRequisitionDetail
+
+Need Response:
+- quantityRemaining
