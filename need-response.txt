@@ -1,6 +1,3 @@
-DO Detail
-- Tampilkan budget code/name, sub budget code/name
-
 ============================== DELIVERY ORDER REVISION & GO TO DOCUMENT PAGE ==============================
 API Key:
 - transaction.read.dataList.supplyChain.getDeliveryOrderDetail
