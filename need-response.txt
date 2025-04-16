@@ -1,3 +1,6 @@
+DO Detail
+- Tampilkan budget code/name, sub budget code/name
+
 ============================== DELIVERY ORDER REVISION & GO TO DOCUMENT PAGE ==============================
 API Key:
 - transaction.read.dataList.supplyChain.getDeliveryOrderDetail
@@ -50,3 +53,15 @@ API Key:
 Need Response:
 - quantityRemaining
 - productCode
+
+============================== GET LIST ==============================
+API Key:
+- transaction.read.dataList.supplyChain.getDeliveryOrder
+
+Need Reponse:
+- combinedBudget_RefID (refer value)
+- combinedBudgetCode (refer value)
+- combinedBudgetName (refer value)
+- combinedBudgetSection_RefID (refer value)
+- combinedBudgetSectionCode (refer value)
+- combinedBudgetSectionName (refer value)
