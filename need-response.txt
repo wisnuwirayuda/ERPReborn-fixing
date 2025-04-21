@@ -50,6 +50,12 @@ API Key:
 Need Response:
 - quantityRemaining
 - productCode
+----------------------------------------------------------------------------------
+API Key:
+- transaction.read.dataList.taxation.getVat
+
+Need Response:
+- TaxType_RefID (182XXXXXXXXXXXX)
 
 ============================== GET LIST ==============================
 API Key:
