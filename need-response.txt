@@ -21,6 +21,7 @@ Need Response:
 - Product ID
 - DP
 - File ID
+- Payment Notes
 
 Notes:
 1. Purchase Requisition
