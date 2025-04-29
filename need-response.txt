@@ -23,7 +23,9 @@ Need Response:
 
 Notes:
 1. Purchase Requisition
-    - API Detail, response yg diberikan valuenya tidak berubah, padahal ID nya berbeda.
+    - API List, belum ready masih menunggu pak Teguh.
+    - API Detail, response yg diberikan valuenya tidak berubah padahal ID nya berbeda, dan terdapat beberapa response yg belum tampil seperti Delivery To, Date of Deliery.
+    - 
 2. Purchase Order
     - Create DO belum bisa mengirim product_RefID, karena API PO Detail belum ada product ID (belum request)
 3. Delivery Order
