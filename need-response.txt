@@ -23,6 +23,7 @@ Need Response:
 - File ID
 - Payment Notes
 - Internal Note
+- Remark PO
 
 Notes:
 1. Purchase Requisition
