@@ -21,9 +21,13 @@ Need Response:
 - Product Name (Value masih null)
 - Product ID
 
-
-
-
+Notes:
+1. Purchase Requisition
+    - API Detail
+2. Purchase Order
+    - Create DO belum bisa mengirim product_RefID, karena API PO Detail belum ada product ID (belum request)
+3. Delivery Order
+4. Material Receive
 
 ============================== DONE ==============================
 ============================== DELIVERY ORDER REVISION & GO TO DOCUMENT PAGE ==============================
