@@ -20,6 +20,7 @@ Need Response:
 - Product Name (Value masih null)
 - Product ID
 - DP
+- File ID
 
 Notes:
 1. Purchase Requisition
