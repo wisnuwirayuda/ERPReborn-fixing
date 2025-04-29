@@ -10,7 +10,6 @@ Need Response:
 - Transporter Handphone
 - Transporter Address
 - Remarks Detail
-- 
 
 API Key:
 - transaction.read.dataList.supplyChain.getPurchaseOrderDetail
@@ -30,6 +29,14 @@ Notes:
     - Create DO belum bisa mengirim product_RefID, karena API PO Detail belum ada product ID (belum request)
 3. Delivery Order
 4. Material Receive
+
+11. Data Budget hanya diakses dari transaction
+    - ARF
+    - BRF
+    - PR
+    - REM
+
+- Qty Avail ada ketika sebelumnya Transaction sudah pernah di submit
 
 ============================== DONE ==============================
 ============================== DELIVERY ORDER REVISION & GO TO DOCUMENT PAGE ==============================
