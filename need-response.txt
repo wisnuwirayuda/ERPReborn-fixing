@@ -23,7 +23,7 @@ Need Response:
 
 Notes:
 1. Purchase Requisition
-    - API Detail
+    - API Detail, response yg diberikan valuenya tidak berubah, padahal ID nya berbeda.
 2. Purchase Order
     - Create DO belum bisa mengirim product_RefID, karena API PO Detail belum ada product ID (belum request)
 3. Delivery Order
