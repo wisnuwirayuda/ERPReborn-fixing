@@ -1,3 +1,31 @@
+API Key:
+- transaction.read.dataList.supplyChain.getDeliveryOrderDetail
+
+Need Response:
+- Transporter ID
+- Transporter Name
+- Transporter Phone
+- Transporter Fax
+- Transporter Contact
+- Transporter Handphone
+- Transporter Address
+- Remarks Detail
+- 
+
+API Key:
+- transaction.read.dataList.supplyChain.getPurchaseOrderDetail
+
+Need Response:
+- Supplier ID
+- Product Code (Value masih null)
+- Product Name (Value masih null)
+- Product ID
+
+
+
+
+
+============================== DONE ==============================
 ============================== DELIVERY ORDER REVISION & GO TO DOCUMENT PAGE ==============================
 API Key:
 - transaction.read.dataList.supplyChain.getDeliveryOrderDetail
@@ -68,3 +96,5 @@ Need Reponse:
 - combinedBudgetSection_RefID (refer value)
 - combinedBudgetSectionCode (refer value)
 - combinedBudgetSectionName (refer value)
+
+============================== DONE ==============================
