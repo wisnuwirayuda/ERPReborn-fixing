@@ -19,6 +19,7 @@ Need Response:
 - Product Code (Value masih null)
 - Product Name (Value masih null)
 - Product ID
+- DP
 
 Notes:
 1. Purchase Requisition
