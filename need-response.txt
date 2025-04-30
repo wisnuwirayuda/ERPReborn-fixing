@@ -36,7 +36,7 @@ Need Response:
 - Delivery Name
 - Response remarks saat ini belum diketahui apakah remarks header atau detail
 - File ID
-- 
+- Date of Delivery
 
 Notes:
 1. Purchase Requisition
