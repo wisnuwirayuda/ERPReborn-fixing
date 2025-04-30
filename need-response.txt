@@ -37,6 +37,8 @@ Need Response:
 - Response remarks saat ini belum diketahui apakah remarks header atau detail
 - File ID
 - Date of Delivery
+- Document Number
+- Business Document ID
 
 Notes:
 1. Purchase Requisition
