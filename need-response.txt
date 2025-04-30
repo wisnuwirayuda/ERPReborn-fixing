@@ -35,6 +35,7 @@ Need Response:
 - Delivery Code
 - Delivery Name
 - Response remarks saat ini belum diketahui apakah remarks header atau detail
+- File ID
 - 
 
 Notes:
