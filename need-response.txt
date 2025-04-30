@@ -42,6 +42,10 @@ Need Response:
 - Product Code
 - Qty Budget
 - Qty Avail
+- Total Budget
+- Qty Req
+- Price Req
+- Total Req
 
 Notes:
 1. Purchase Requisition
