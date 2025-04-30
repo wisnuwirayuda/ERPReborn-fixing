@@ -26,6 +26,15 @@ Need Response:
 - Remark PO
 - Business Document ID
 
+API Key:
+- transaction.read.dataList.supplyChain.getPurchaseRequisitionDetail
+
+Need Response:
+- Data yg ditampilkan tidak sama dengan data yg dipilih.
+- Delivery ID
+- Delivery Code
+- Delivery Name
+
 Notes:
 1. Purchase Requisition
     - API List, belum ready masih menunggu pak Teguh.
