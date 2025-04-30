@@ -39,6 +39,7 @@ Need Response:
 - Date of Delivery
 - Document Number
 - Business Document ID
+- Product Code
 
 Notes:
 1. Purchase Requisition
