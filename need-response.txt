@@ -24,6 +24,7 @@ Need Response:
 - Payment Notes
 - Internal Note
 - Remark PO
+- Business Document ID
 
 Notes:
 1. Purchase Requisition
