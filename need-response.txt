@@ -26,6 +26,12 @@ Need Response:
 - Remark PO
 - Business Document ID
 - Term of Payment ID
+- Qty PR
+- Qty Available
+- Unit Price
+- Total
+- Currency
+- Price Req
 
 API Key:
 - transaction.read.dataList.supplyChain.getPurchaseRequisitionDetail
