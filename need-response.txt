@@ -40,6 +40,8 @@ Need Response:
 - Document Number
 - Business Document ID
 - Product Code
+- Qty Budget
+- Qty Avail
 
 Notes:
 1. Purchase Requisition
