@@ -25,6 +25,7 @@ Need Response:
 - Internal Note
 - Remark PO
 - Business Document ID
+- Term of Payment ID
 
 API Key:
 - transaction.read.dataList.supplyChain.getPurchaseRequisitionDetail
