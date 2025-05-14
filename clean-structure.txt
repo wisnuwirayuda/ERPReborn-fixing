@@ -1,0 +1,82 @@
+===========================================FOLDER APP/SERVICES===========================================
+// app/Services/ProjectService.php
+namespace App\Services;
+
+use App\Helpers\ZhtHelper\System\FrontEnd\Helper_APICall;
+use App\Helpers\ZhtHelper\System\Helper_Environment;
+use Illuminate\Support\Facades\Session;
+
+class ProjectService
+{
+    public function getProjectData()
+    {
+      try {
+          $varAPIWebToken = Session::get('SessionLogin');
+  
+          $response = Helper_APICall::setCallAPIGateway(
+              Helper_Environment::getUserSessionID_System(),
+              $varAPIWebToken,
+              'dataPickList.project.getProject',
+              'latest',
+              ['parameter' => null],
+              false
+          );
+  
+          return $response['data']['data'] ?? [];
+      } catch (\Exception $e) {
+          // Log error untuk keperluan debug dev
+          \Log::error('Error getProjectData: '.$e->getMessage());
+  
+          // Lempar ulang agar controller bisa tangani response
+          throw new \RuntimeException('Gagal mengambil data project');
+      }
+    }
+}
+
+===========================================FOLDER CONTROLLER/FUNCTION===========================================
+// app/Http/Controllers/Function/FunctionController.php
+
+namespace App\Http\Controllers\Function;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redis;
+use App\Services\ProjectService;
+
+class FunctionController extends Controller
+{
+    protected $projectService;
+
+    public function __construct(ProjectService $projectService)
+    {
+        $this->projectService = $projectService;
+    }
+
+    // Controller untuk halaman index
+    public function index()
+    {
+        return view('function.index'); // blade view kamu
+    }
+
+    // Controller untuk ambil data project (digunakan oleh modal via AJAX)
+    public function getProject(Request $request)
+    {
+        try {
+            if (Redis::get("Budget") === null) {
+                $projects = $this->projectService->getProjectData();
+                Redis::set("Budget", json_encode($projects));
+            } else {
+                $projects = json_decode(Redis::get("Budget"), true);
+            }
+    
+            return response()->json($projects);
+        } catch (\Exception $e) {
+            \Log::error('Error getProject: ' . $e->getMessage());
+    
+            return response()->json([
+                'status' => 'error',
+                'message' => $e->getMessage()
+            ], 500);
+        }
+    }
+}
