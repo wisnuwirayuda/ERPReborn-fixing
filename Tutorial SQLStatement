@@ -5,7 +5,8 @@ Cara Menggunakan SQLStatement
 'sort' => null,
 // 'sort' => '"Sys_RPK" DESC',
 'filter' => null,
-// 'filter' => '"FullName" = ''Bank Mandiri'' OR "Sys_RPK" = 22',
+// 'filter' => '"Name" = \'Advance Settlement Form\'',
+// 'filter' => '"Name" = \'Advance Settlement Form\' AND "Status" = \'Active\'',
 'paging' => null
 // 'paging' => "LIMIT 1 OFFSET 1"
 
